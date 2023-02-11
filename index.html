@@ -1,4 +1,7 @@
 
+
+
+
 <style>
 body{
 
@@ -24,5 +27,31 @@ padding:0;}
 <h1 >
 Ali Akil</h1>
 <div>
+<script>
+a=fetch("https://www.thaqalayn-api.net/api/Al-Amali-Mufid/random", {
+  "headers": {
+    "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9",
+    "accept-language": "en-US,en;q=0.9",
+    "cache-control": "max-age=0",
+    "if-none-match": "W/\"dc4-yIktt1kIlNwxWR/SbiYgPK1alxI\"",
+    "sec-ch-ua": "\"Chromium\";v=\"108\", \"Opera\";v=\"94\", \"Not)A;Brand\";v=\"99\"",
+    "sec-ch-ua-mobile": "?0",
+    "sec-ch-ua-platform": "\"Windows\"",
+    "sec-fetch-dest": "document",
+    "sec-fetch-mode": "navigate",
+    "sec-fetch-site": "cross-site",
+    "sec-fetch-user": "?1",
+    "upgrade-insecure-requests": "1"
+  },
+  "referrer": "https://github.com/MohammedArab1/ThaqalaynAPI",
+  "referrerPolicy": "no-referrer-when-downgrade",
+  "body": null,
+  "method": "GET",
+  "mode": "cors",
+  "credentials": "omit"
+}) .then((response) => response.json())
+  .then((data) => {console.log(data); return data});
+
+</script>
 </body>
 </head>
